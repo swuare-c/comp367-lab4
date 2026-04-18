@@ -34,5 +34,6 @@ steps:
   displayName: 'Push to Azure Artifacts'
   inputs:
     command: 'push'
+    packagesToPush: 'C:\agents\_work\1\a\**\*.nupkg'
     publishVstsFeed: 'comp367-lab4/Feed-lab4'
     allowPackageConflicts: true
