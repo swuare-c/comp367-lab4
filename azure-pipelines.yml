@@ -27,7 +27,7 @@ steps:
   displayName: 'Pack NuGet'
   inputs:
     command: 'pack'
-    packagesToPack: '**/StringLibrary.csproj'
+    packagesToPack: '**/*.csproj'
     configuration: '$(buildConfiguration)'
 
 - task: NuGetCommand@2
