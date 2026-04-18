@@ -34,5 +34,5 @@ steps:
   displayName: 'Push to Azure Artifacts'
   inputs:
     command: 'push'
-    publishVstsFeed: 'Feed-lab4'
+    publishVstsFeed: 'comp367-lab4/Feed-lab4'
     allowPackageConflicts: true
