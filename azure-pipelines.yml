@@ -27,12 +27,12 @@ steps:
   displayName: 'Pack NuGet'
   inputs:
     command: 'pack'
-    packagesToPack: '**/*.csproj'
+    packagesToPack: '**/StringLibrary.csproj'
     configuration: '$(buildConfiguration)'
 
 - task: NuGetCommand@2
   displayName: 'Push to Azure Artifacts'
   inputs:
     command: 'push'
-    publishVstsFeed: 'YourFeedName'
+    publishVstsFeed: 'lab4-agentpool'
     allowPackageConflicts: true
